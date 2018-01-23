@@ -1,0 +1,96 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Identity Verification</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+        <style>
+            .textbox{
+                width: 200px;
+                height: 23px;
+                font-size: 18px;
+            }
+            .myButton{
+                width: 100px;
+                height: 30px;
+                border-radius: 5px;
+                font-size: 15px;
+                border-bottom-color: yellow;
+                border-top-color: red;
+                border-left-color: blue;
+                border-right-color: blueviolet;
+                background: white;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <%
+            if (request.getParameter("msg") != null) {%>
+        <script>alert('Registration Successfully \n Email id as your userid and Password sent to registered mail id');</script>
+        <%}
+         session.invalidate();
+        %>
+        <div id="main">		
+            <header>
+                <div id="strapline">
+                    <div id="welcome_slogan">
+                        <center><label style="font-size: 28px;color: white">Continuous User Identity Verification for <br />Secure Internet Services</label></center>
+                    </div><!--close welcome_slogan-->
+                </div><!--close strapline-->	  
+                <nav style="margin-left: 200px;">
+                    <div id="menubar">
+                        <ul id="nav">
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="user.jsp">User</a></li>
+                            <li><a href="server.jsp">Server</a></li>
+                            <li><a href="reg.jsp">Registration</a></li>
+                        </ul>
+                    </div><!--close menubar-->	
+                </nav>
+            </header>
+            <div id="site_content" style="height: 500px;"><br />		
+                
+                <form name="form1" style="margin-top: 0px;width: 600px;height:500px;color: white;margin-left: 200px" onsubmit="return formValidation();" action="Upload" method="post" enctype="multipart/form-data">
+                    <center><h1 styles="font-family: 'Tangarine',serif">Registration Form</h1></center><br />
+                    <center><a href="user.jsp">Already a member? Signin </a> </center><br/>
+                    <label style="font-size: 20px;margin-left: 70px">Name</label>&nbsp;&nbsp;<input type="text" class="textbox" placeholder="" required style="margin-left: 80px;" name="name"/><br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="gender" class="textbox" required style="margin-left: 55px">
+                        <option  selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select><br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">Date of Birth</label><input type="date" class="textbox" required  style="margin-left: 30px" name="dob"/><br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">A/C No.</label><input type="text" class="textbox" size="19" required style="margin-left: 70px" name="acno"/><br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">Bank Name</label>
+                    <select name="bank" class="textbox" required style="margin-left: 32px">
+                        <option  selected>Select Bank</option>
+                        <option value="SBI">SBI</option>
+                        <option value="Indian Bank">Indian Bank</option>
+                        <option value="ICICI">ICICI</option>
+                        <option value="KVB">KVB</option>
+                        <option value="IOB">IOB</option>
+                    </select><br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">Address</label><input type="text" class="textbox"name="address" style="margin-left: 67px;"/>&nbsp;<br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">Contact No</label><input type="text" name="cno" class="textbox" size="10" name="cno" style="margin-left: 40px" /><br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">Email</label><input type="email" name="email" class="textbox"  style="margin-left: 90px;"/><br /><br />
+                    <label style="font-size: 20px;margin-left: 70px">Profile Image</label><input type="file" name="file" class="textbox" style="margin-left: 23px;width: 300px"/><br /><br />
+                    <input type="submit" class="myButton" style="margin-left: 150px" value="SignUp"/>
+                    &nbsp; &nbsp; <input type="reset" class="myButton" />
+                    
+                </form> 
+            </div><!--close site_content-->  	
+            <footer>
+                <br /><br />
+            </footer>
+			</div><!--close main-->
+        <!-- javascript at the bottom for fast page loading -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/image_slide.js"></script>
+    </body>
+</html>
+

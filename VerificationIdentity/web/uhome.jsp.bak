@@ -1,0 +1,45 @@
+<%@page import="java.util.Date"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Identity Verification</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    </head>
+    <body>
+        <div id="main">		
+            <header>
+                <div id="strapline">
+                    <div id="welcome_slogan">
+                        <center><label style="font-size: 28px;color: white">Continuous and Transparent User Identity Verification for <br />Secure Internet Services</label></center>
+                    </div><!--close welcome_slogan-->
+                </div><!--close strapline-->	  
+                <nav>
+                    <div id="menubar">
+                        <ul id="nav">
+                            <li class="current"><a href="uhome.jsp">Home</a></li>
+                            <li><a href="profile.jsp">Profile</a></li>
+                            <li><a href="account.jsp">Account</a></li>
+                            <li><a href="beneficial.jsp">Beneficial</a></li>
+                            <li><a href="money.jsp">Money Transaction</a></li>
+                            <li><a href="index.html">Log Out</a></li>
+                        </ul>
+                    </div><!--close menubar-->	
+                </nav>
+            </header>
+            <div id="site_content" style="height: 380px;"><br />		
+                <div style="color: white;height: 400px;background: url('images/bank12.jpg')">
+                </div>
+                <meta http-equiv="refresh" content="30;url=./index.html">
+            </div><!--close site_content-->  	
+
+        </div><!--close main-->
+        <!-- javascript at the bottom for fast page loading -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/image_slide.js"></script>
+    </body>
+</html>
+

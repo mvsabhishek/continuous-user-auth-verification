@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Identity Verification</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    </head>
+    <body>
+        <div id="main">		
+            <header>
+                <div id="strapline">
+                    <div id="welcome_slogan">
+                        <center><label style="font-size: 28px;color: white">Continuous and Transparent User Identity Verification for <br />Secure Internet Services</label></center>
+                    </div><!--close welcome_slogan-->
+                </div><!--close strapline-->	  
+                <nav style="margin-left: 200px;">
+                    <div id="menubar">
+                        <ul id="nav">
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="user.jsp">User</a></li>
+                            <li><a href="server.jsp">Server</a></li>
+                            <li><a href="reg.jsp">Registration</a></li>
+                        </ul>
+                    </div><!--close menubar-->	
+                </nav>
+            </header>
+            <div id="site_content" style="height: 380px;"><br />		
+                <label style="font-size: 20px;color: white">Abstract :</label>
+                <p style="font-size: 17px;text-align: justify;margin: 20px">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Session management in distributed Internet services is traditionally based on username and password, explicit logouts and
+                    mechanisms of user session expiration using classic timeouts. Emerging biometric solutions allow substituting username and
+                    password with biometric data during session establishment, but in such an approach still a single verification is deemed sufficient, and
+                    the identity of a user is considered immutable during the entire session. Additionally, the length of the session timeout may impact on
+                    the usability of the service and consequent client satisfaction. This paper explores promising alternatives offered by applying biometrics
+                    in the management of sessions. A secure protocol is defined for perpetual authentication through continuous user verification. The
+                    protocol determines adaptive timeouts based on the quality, frequency and type of biometric data transparently acquired from the user.
+                    The functional behavior of the protocol is illustrated through Matlab simulations, while model-based quantitative analysis is carried out
+                    to assess the ability of the protocol to contrast security attacks exercised by different kinds of attackers. Finally, the current prototype
+                    for PCs and Android smartphones is discussed.
+                </p>
+
+            </div><!--close site_content-->  	
+            <footer>
+                <a href="#" style="text-decoration: none">Copyrights &COPY; 2015-2016</a><br /><br />
+                <a href="#" style="text-decoration: none">Design By VIP</a>
+            </footer>
+
+        </div><!--close main-->
+        <!-- javascript at the bottom for fast page loading -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/image_slide.js"></script>
+    </body>
+</html>
